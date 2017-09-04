@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\workspace\\git\\OpenGLES\\HelloWorld\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
+        "source": "C:\\workspace\\git\\OpenGLES\\HelloWorld\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\workspace\\git\\OpenGLES\\HelloWorld\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher_round.png",
+        "source": "C:\\workspace\\git\\OpenGLES\\HelloWorld\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    }
+]
