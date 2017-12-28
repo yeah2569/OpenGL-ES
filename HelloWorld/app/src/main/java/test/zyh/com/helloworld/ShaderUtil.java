@@ -1,6 +1,7 @@
 package test.zyh.com.helloworld;
 
 import android.content.res.Resources;
+import android.graphics.Shader;
 import android.opengl.GLES30;
 import android.util.Log;
 
@@ -25,6 +26,7 @@ public class ShaderUtil {
                 Log.e("ES30_ERROR", "Cold not compile shader " + shaderType + ":");
                 Log.e("ES30_ERROR", GLES30.glGetShaderInfoLog(shader));
                 GLES30.glDeleteShader(shader);
+                shader = 0;
             }
         }
         return shader;
@@ -57,9 +59,8 @@ public class ShaderUtil {
     }
 
     public static void checkGLError(String op) {
-        int error = 0;
-        int is_error =  error == GLES30.glGetError() ? 1 : 0;
-        while (is_error != GLES30.GL_NO_ERROR){
+        int error = GLES30.glGetError();
+        while (error != GLES30.GL_NO_ERROR){
             Log.e("GLES30_ERROR", op + ": glError  " + error );
             throw new RuntimeException(op + ": glError " + error);
 
