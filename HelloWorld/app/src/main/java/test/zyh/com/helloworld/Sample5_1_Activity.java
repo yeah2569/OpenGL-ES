@@ -1,22 +1,23 @@
 package test.zyh.com.helloworld;
 
 import android.content.pm.ActivityInfo;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
+import android.support.v7.app.AppCompatActivity;
 
-public class HelloWorld extends AppCompatActivity {
+/**
+ * Created by admin on 2018/1/24.
+ */
 
-    MySurfaceView mview;
+public class Sample5_1_Activity extends AppCompatActivity {
+    MyTDView mview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-        mview = new MySurfaceView(this);
+        mview = new MyTDView(this);
         mview.requestFocus();
         mview.setFocusableInTouchMode(true);
         setContentView(mview);
